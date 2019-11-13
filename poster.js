@@ -51,7 +51,7 @@ async function post_random_image() {
 }
 
 robot.start_posting = (minutes) => {
-    setInterval(() => post_random_image, 2000 * 60 * (minutes || 5))
+    setInterval(post_random_image, 1000 * 60 * (minutes || 1))
 }
 
 
