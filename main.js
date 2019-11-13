@@ -10,7 +10,7 @@ process.on('unhandledRejection', (reason, p) => {
 robot.on('login', async () => {
     console.log(await robot.nick, "may post anime girls");
     post_random_image()
-    robot.start_posting()
+    robot.start_posting(10)
 
 })
 
